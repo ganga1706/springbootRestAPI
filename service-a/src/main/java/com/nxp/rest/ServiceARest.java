@@ -17,7 +17,7 @@ public class ServiceARest {
 	public ServiceAResponse getMsg(@RequestBody ServiceARequest serviceARequest) {
 
 		ServiceAResponse response = new ServiceAResponse();
-		if (serviceARequest == null) {
+		if (serviceARequest =! null) {
 			response.setRequestId("123");
 			response.setResponseCode("9999");
 			response.setResponseMessage("Success_ServiceA");

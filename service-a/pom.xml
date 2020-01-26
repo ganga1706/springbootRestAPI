@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.nxp</groupId>
 	<artifactId>service-a</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.2.1-SNAPSHOT</version>
 	<name>service-a</name>
 	<description>login service</description>
 

@@ -13,13 +13,18 @@ import com.nxp.model.ServiceAResponse;
 @RequestMapping(value = "/rest", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 public class ServiceARest {
 
-  @PostMapping(value = "/getmsg")
-  public ServiceAResponse getMsg(@RequestBody ServiceARequest serviceARequest) {
-    ServiceAResponse response = new ServiceAResponse();
-    response.setRequestId("123");
-    response.setResponseCode("0000");
-    response.setResponseMessage("Success_ServiceA");
-    return response;
-  }
+	@PostMapping(value = "/getmsg")
+	public ServiceAResponse getMsg(@RequestBody ServiceARequest serviceARequest) {
+
+		ServiceAResponse response = new ServiceAResponse();
+		if (serviceARequest != null) {
+			response.setRequestId("123");
+			response.setResponseCode("9999");
+			response.setResponseMessage("Success_ServiceA");
+			return response;
+		}
+		return response;
+
+	}
 
 }

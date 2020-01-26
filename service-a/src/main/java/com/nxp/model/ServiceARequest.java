@@ -8,8 +8,17 @@ public class ServiceARequest implements Serializable {
 
   private String cardId;
   private String eventType;
+  private String eventCode;
 
-  public String getCardId() {
+  public String getEventCode() {
+	return eventCode;
+}
+
+public void setEventCode(String eventCode) {
+	this.eventCode = eventCode;
+}
+
+public String getCardId() {
     return cardId;
   }
 
